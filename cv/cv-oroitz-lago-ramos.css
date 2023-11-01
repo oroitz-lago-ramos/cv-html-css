@@ -2,6 +2,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Comic Neue', regular;
+    /* background-color: rgb(244, 244, 244); */
 }
 
 main {
@@ -13,6 +14,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: rgba(0, 0, 0, 0.396) 1px solid;
+    margin-bottom: 2em;
 }
 
 span {
@@ -33,14 +36,20 @@ span {
 
 #formations,
 #experiences {
-    padding: 2%;
+    padding: 0 2%;
     color: black;
+    margin-top: 0;
+}
+
+h2 {
+    color: #876ed8;
+    text-shadow: #876ed8 0.5px 0 1px;
 }
 
 #formations h2,
 #experiences h2 {
     padding: 2%;
-    color: #876ed8;
+    /* margin: 10px; */
 }
 
 #formations {
@@ -130,3 +139,21 @@ a:hover {
     border-bottom: 1px solid;
     color: #f3f3f3;
 }
+
+.boxed {
+     /* From https://css.glass */
+     background: rgba(255, 255, 255, 0.3);
+     border-radius: 16px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(6px);
+     -webkit-backdrop-filter: blur(6px);
+     border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+#hard-skills, #soft-skills, #langues {
+justify-content: center;
+padding: 60px;
+padding-top: 0;
+padding-bottom: 0;
+}
+
