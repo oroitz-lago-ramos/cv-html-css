@@ -11,12 +11,15 @@ main {
 
 header {
     background-color: #876ed8;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: rgba(0, 0, 0, 0.396) 1px solid;
     margin-bottom: 2em;
 }
+
+
 
 span {
     color: #876ed8;
@@ -29,16 +32,19 @@ span {
 }
 
 #grand-div {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 #formations,
 #experiences {
+    max-width: 300px;
     padding: 0 2%;
     color: black;
     margin-top: 0;
+    margin: 5px;
 }
 
 h2 {
@@ -46,19 +52,7 @@ h2 {
     text-shadow: #876ed8 0.5px 0 1px;
 }
 
-#formations h2,
-#experiences h2 {
-    padding: 2%;
-    /* margin: 10px; */
-}
 
-#formations {
-    margin-right: 15%;
-}
-
-#experiences {
-    margin-left: 15%;
-}
 
 .cv-element * {
     padding: 0;
@@ -72,13 +66,13 @@ h2 {
     color: rgba(40, 40, 40, 0.999);
 }
 
-/* .competences {
-    background-color: red;
-} */
 
 .competences h2 {
+    text-align: center;
+}
+.competences {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .competences h2,
@@ -90,8 +84,11 @@ h2 {
 #competences-container {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px
 }
+
 
 #competences-container h4 {
     padding-left: 40px;
@@ -152,8 +149,6 @@ a:hover {
 
 #hard-skills, #soft-skills, #langues {
 justify-content: center;
-padding: 60px;
-padding-top: 0;
-padding-bottom: 0;
+width: 200px;
 }
 
